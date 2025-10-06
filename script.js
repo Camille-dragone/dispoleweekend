@@ -1,11 +1,10 @@
 // Exercise
 
 // PART 1 
-const jsWeekEndInstructors = instructors.filter(instructor => {
-    const knowsJavascript = instructor.specialities.includes('Javascript');
-    const dispoWeekend = instructor.availability === 'weekend' || instructor.availability === 'all';
-    return knowsJavascript && dispoWeekend; 
-})
+const jsWeekEndInstructors = instructors.filter((instructor ) => 
+    instructor.specialities.includes('Javascript')&&
+   ((instructor.availability === 'weekend' || instructor.availability === 'all')
+));
 // 
 // // PART 2
 // Iterate over that new array of instructors available and show a message per instructor saying:
